@@ -59,6 +59,32 @@ if __name__ == "__main__":
 # Which is actually super important when we write the tools because the LM is going to be using that description.
 
 
+# And this is the name that our agent is going to refer to this tool.
+
+# And it's going to be supplied to the reasoning engine.
+
+# And it's going to be displayed in the logs.
+
+# So we want to put something meaningful in the name.
+
+# Second is a function.
+
+#  this is actually the Python function that we want this tool to run.
+
+# So we're going to see soon what's the implementation here which is going to search for the LinkedIn
+
+# profile page.
+
+# And lastly in line 21, you can see a description.
+
+# And the description is super, super important because that's how the LLM is going to determine whether
+
+# to use this tool or not.
+
+# So we want this description to be as concise and to have as much information.
+
+
+
 
 #-----------react agent-----------
 
@@ -95,6 +121,28 @@ if __name__ == "__main__":
 # And the last object we'll be using is called an agent executor.
 
 # And the agent executor is the runtime of the agent.
+
+# So now we want to download something which is called the react prompt.
+
+# And for that we're going to be writing hub dot pull.
+
+# And we're going to plug in the string Harrison Chase 17 slash react.
+
+# Now Harrison Chase 17 is the username of Harrison Chase in the prompt tab.
+
+# And Harrison Chase is the co-founder and creator of Link Chain and Slash react.
+
+# Here is a prompt that Harrison Chase wrote, which is a super popular prompt used for react prompting.
+
+# And it's actually going to be the reasoning engine of our agent.
+
+# And you can see that the react prompt is a prompt that is sent to the LM.
+
+# It will include our tool names and our tool descriptions and what we want our agent to do.
+
+# And luckily for us, Linkchain is going to be plugging in those values for us after we initialize the
+
+# agent.
 
 
 #------------agent excecutor------------------
