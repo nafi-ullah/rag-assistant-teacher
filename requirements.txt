@@ -6,3 +6,8 @@ python-dotenv
 
 # vectore embedding system
 langchain-pinecone
+
+
+# chat with [df
+pypdf
+faiss-cpu
