@@ -3,7 +3,7 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 from linkedin_scrapping.third_parties.linkedin import scrape_linkedin_profile
-from search_agent.agents.linkedin_lookup_agents import lookup as linkedin_lookup_agent
+from search_agent_sec3.agents.linkedin_lookup_agents import lookup as linkedin_lookup_agent
 
 
 def ice_break_with(name: str) -> str:

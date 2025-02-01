@@ -21,7 +21,9 @@ def main_process():
 
     llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini")
 
+    
     chain = summary_prompt_template | llm
+    # this lecture was for linkedin scrapping and pass in llm. the twitter processing lecture contains the twitter scrapping which is merged in third_parties
     linkedin_data = scrape_linkedin_profile(
         linkedin_profile_url="https://www.linkedin.com/in/eden-marco/"
     )

@@ -33,7 +33,7 @@ def scrape_linkedin_profile(linkedin_profile_url: str, mock: bool = False):
         )
 
 
-    # for token limit problem.. jegula empty file ogula jeno remove mare..
+    # for token limit problem.. jegula empty field ogula jeno remove mare..
     data = response.json()
     data = {
         k: v
