@@ -44,7 +44,12 @@ if __name__ == "__main__":
 
     # Download a prebuilt retrieval-augmented QA prompt template from LangChain's hub
     retrieval_qa_chat_prompt = hub.pull("langchain-ai/retrieval-qa-chat")
-
+    '''
+    Answer any use questions based solely on the context below:
+        <context>
+            {context}
+        </context>
+    '''
     # Create a chain to combine retrieved documents into a cohesive response
     combine_docs_chain = create_stuff_documents_chain(
         llm,  # The language model to generate responses
