@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter # it will chunkify html loaded documents.
 from langchain_community.document_loaders import ReadTheDocsLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
@@ -25,6 +25,7 @@ def ingest_docs():
     for doc in documents:
         new_url = doc.metadata["source"]
         new_url = new_url.replace("langchain-docs", "https:/")
+        # http er jaygay local er jei location a ase sei location retrieve kore niye ashse.
         doc.metadata.update({"source": new_url})
 
     print(f"Going to add {len(documents)} to Pinecone")

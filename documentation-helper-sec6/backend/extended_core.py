@@ -16,7 +16,7 @@ from langchain_pinecone import PineconeVectorStore
 
 from consts import INDEX_NAME
 
-
+# extended for add chat history so that llm have memory of previous discussion
 def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
     docsearch = PineconeVectorStore(index_name=INDEX_NAME, embedding=embeddings)
